@@ -1,0 +1,41 @@
+.
+├── 02-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 03-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 04-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 05-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 06-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 07-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 08-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 09-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── 10-10-2023
+│   ├── count.txt
+│   ├── errors.txt
+│   └── log.txt
+├── log.txt
+└── structure.txt
+
+9 directories, 29 files
