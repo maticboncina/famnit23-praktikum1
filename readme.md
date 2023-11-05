@@ -21,7 +21,7 @@ The repository serves as a personal archive of all code written during the cours
     - `class`
       - `linux` - Collection of bash scripts, written during the Linux lectures.
       - `latex` - Collection of LaTeX files, written during the LaTeX lectures.
-      - `c` - Code from the C clectures.
+      - `c` - Code from the C lectures.
 
 2. Organised code by dates (yyyy-mm-dd).
 
