@@ -7,6 +7,7 @@
 Practice assistants: 
 
 asis. Domen Vake - Linux
+
 dr. Klen Čopič Pucihar - LaTeX & C
 
 ## Intro 
