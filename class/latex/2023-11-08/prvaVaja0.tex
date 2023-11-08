@@ -1,0 +1,90 @@
+\documentclass{article}
+\title{Prvi skok v LaTeX}
+\author{Matic Bončina}
+\date{8. 11. 2023}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%to je konfiguracijsko območje
+%v zavitih oklepajih so opcije (options) komand
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+\pagenumbering{arabic}
+\section{Uvod}
+To je uvod v LaTeX, ki ga bomo uporabljali za namene študijskega izvajanja.
+
+\subsection{Nabor hipotez}
+\paragraph{Hipoteza:} Danes je lepo vreme
+\subparagraph{Pod hipoteza:} Vsak dan je lepo vreme
+
+\section{Gnezdenje}
+\subsection{Prvi}
+\subsection{Drugi}
+\subsubsection{Tretji}
+
+\section{Matematični izrazi}
+\subsection{Oštevilčenje enačb}
+\begin{equation}
+    f(x) =  x^2
+\end{equation}
+
+\subsection{Neoštevilčeni izrazi}
+\begin{equation*}
+    g(x) = k*x + n
+\end{equation*}
+
+\begin{align*}
+    1+2+3 &= 6x\\
+    y &= 3x + 6\\ %"&" naredi poravnavo na ta znak
+    f(x) &= \frac{x^2 + 3x + 8}{7x + 3}\\ % "\\" naredi novo vrstico
+    g(x) &= \int^a_b \frac{1}{x}    
+\end{align*}
+
+\subsection{Funkcija v besedilu}
+To je funkcija v besedeilu: $g(x) = \int^a_b
+\frac{1}{x}$.
+
+\subsection{Matrike}
+$ 
+%"$" pove matematični izraz
+\left[
+\begin{matrix}
+    1 & 1 & 0 & 1\\
+    1 & 5 & 2 & 2
+\end{matrix}
+\right]
+$
+
+\newpage
+\section{Slike}
+Riba Nemo (glej slika \ref{fig:nemo}) je ogrožena.
+\begin{figure}[h] % here top bottom [h][t][b] ("!" overwrite-a)
+    \centering
+    \includegraphics[width=\linewidth]{slike/nemo.jpg}
+    \caption{Nemo k peca ribetino}
+    \label{fig:nemo}
+\end{figure}
+
+\section{Tabele}
+V tabeli \ref{tab:seznam} najdete kul folk.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c c|c}
+        \hline
+         \textbf{Ime} & \textbf{Priimek} & \textbf{Kabinet}\\
+         \hline \hline
+         Matic & Bončina & Ljubljanska ulica 12 \\
+         Dedi & Krompir & Ljubljanska ulica 12
+    \end{tabular}
+    \caption{Seznam predavateljev}
+    \label{tab:seznam}
+\end{table}
+
+\end{document}
