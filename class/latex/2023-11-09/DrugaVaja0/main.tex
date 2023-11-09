@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\definecolor{yellow}{RGB}{255,127,0}
+
+\title{DrugaVaja0}
+\author{Matic Bončina}
+\date{November 2023}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\section{Tipi fontov}\\
+\textbf{Tekst v bold}\\
+\textit{Text italic}\\
+\textsc{Velike črke}\\
+\underline{Podčrtano}\\
+
+\section{Barve}
+{\color{red}To je v rdeči barvi} to pa ne.
+{\color{yellow}To je custom rumena barva}
+
+\section{Barve fontov}
+Spreminjanje velikosti fontov Tale text je {\small majhen}, {\large velik}, {\huge HUGE}.
+
+\section{Seznami}
+Ordered
+\begin{enumerate}
+    \item Prvi 
+    \item Drugi
+    \item Tretji
+\end{enumerate}
+
+Unordered
+\begin{itemize}
+    \item Prvi 
+    \item Drugi
+    \item Tretji
+\end{itemize}
+
+Custom simbolčki
+\begin{itemize}
+    \item[+] Prvi 
+    \item[+] Drugi
+    \item[+] Tretji
+\end{itemize}
+
+\newpage
+
+\section{Razmaki}
+\vspace{60pt}
+Tu je neko besedilo, ki ga želimo raz makniti saj me d nim želimo imeti ful več praznih vrstic. Evo tuki je, gor med tem textom in naslovom.
+
+\section{Kul karakterji}
+% enter the commands to produce the following text:
+% Item #1A\642 costs $8 & is
+% sold at a ˜10% profit.
+
+Item \#1A\textbackslash642 costs \$8 \& is sold at a \~{}10\% profit.
+
+\section{Citiranje}
+V tem textu o ChatGPT \cite{ray2023chatgpt}
+
+\bibliographystyle{plain}
+\bibliography{viri}
+
+\end{document}
