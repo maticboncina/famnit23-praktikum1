@@ -1,0 +1,7 @@
+Git commands
+
+clone
+log
+status
+add
+commit -m ""
