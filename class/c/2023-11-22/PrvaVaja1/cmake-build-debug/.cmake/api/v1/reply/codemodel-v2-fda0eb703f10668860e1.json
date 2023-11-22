@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PrvaVaja1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PrvaVaja1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PrvaVaja1-Debug-82de5f08f9643414db38.json",
+					"name" : "PrvaVaja1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/titanblast/Development/personal/famnit/famnit23-praktikum1/class/c/2023-11-22/PrvaVaja1/cmake-build-debug",
+		"source" : "/Users/titanblast/Development/personal/famnit/famnit23-praktikum1/class/c/2023-11-22/PrvaVaja1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

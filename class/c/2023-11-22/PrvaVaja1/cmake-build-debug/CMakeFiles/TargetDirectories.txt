@@ -1,0 +1,3 @@
+/Users/titanblast/Development/personal/famnit/famnit23-praktikum1/class/c/2023-11-22/PrvaVaja1/cmake-build-debug/CMakeFiles/PrvaVaja1.dir
+/Users/titanblast/Development/personal/famnit/famnit23-praktikum1/class/c/2023-11-22/PrvaVaja1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/titanblast/Development/personal/famnit/famnit23-praktikum1/class/c/2023-11-22/PrvaVaja1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
