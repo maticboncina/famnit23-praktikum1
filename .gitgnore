@@ -2,7 +2,7 @@
 .idea/
 cmake-build-debug/
 cmake-build-release/
-*.xml
+**/*.xml
 *.iml
 
 # Compiled Object files
@@ -36,12 +36,12 @@ Makefile.out
 *.DS_Store # macOS specific
 
 # Default ignored files
-/shelf/
-/workspace.xml
+shelf/
+workspace.xml
 
 # Editor-based HTTP Client requests
-/httpRequests/
+httpRequests/
 
 # Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+dataSources/
+dataSources.local.xml
