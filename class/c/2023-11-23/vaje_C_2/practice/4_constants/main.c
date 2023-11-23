@@ -10,7 +10,6 @@
 */
 #include <stdio.h>
 
-// Function prototype declaration
 int multiply_with_constant(int konstanta, int stevilo);
 
 int main() {
@@ -23,7 +22,6 @@ int main() {
     printf("Rezultat: %i\n", multiply_with_constant(konstanta, stevilo));
 }
 
-// Function definition
 int multiply_with_constant(int konstanta, int stevilo) {
     int sum = stevilo * konstanta;
     return sum;
