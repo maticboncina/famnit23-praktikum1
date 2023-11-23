@@ -1,9 +1,5 @@
-# CLion-specific files/directories
-.idea/
-cmake-build-debug/
-cmake-build-release/
-**/*.xml
-*.iml
+# CLion-specific files/directories (globally)
+**/.idea/
 
 # Compiled Object files
 *.o
@@ -45,3 +41,7 @@ httpRequests/
 # Datasource local storage ignored files
 dataSources/
 dataSources.local.xml
+
+# Global patterns for common file types
+**/*.xml
+**/*.iml
