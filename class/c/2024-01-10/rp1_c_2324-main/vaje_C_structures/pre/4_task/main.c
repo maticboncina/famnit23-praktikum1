@@ -1,63 +1,95 @@
-/*Create a program to manage student records using a structure named Student. 
-Each student should have the following information: name, roll number, age, and grade.
+/* 
+Modify the program from previous task. Add support for adding students via 
+command line arguments.
 
-The strucure of the program is provided in order to help you out. Finish the missing parts
-in appropriate manner.
+IZPIS: ./a.out Nastja 111 21 f Simon 222 22 d Andreja 333 31 a
 
-IZPIS: ./a.out 
+Displaying details for all students:
 
-Enter details for student 1:
-Enter student name: Nastja
-Enter roll number: 2222
-Enter age: 21
-Enter grade: female
-
-Student details: 
-
+Student 1 details:
 Student Name: Nastja
-Roll Number: 2222
+Roll Number: 111
 Age: 21
 Grade: f
 
-**/
+Student 2 details:
+Student Name: Simon
+Roll Number: 222
+Age: 22
+Grade: d
+
+Student 3 details:
+Student Name: Andreja
+Roll Number: 333
+Age: 31
+Grade: a
+
+OPTIONAL TASK 1: Change code so that you are not limited to always provide detials for 3 students1.
+OPTIONAL TASK 2: Enable skipping inputs.
+*/
 
 #include <stdio.h>
 #include <string.h>
-
-#define MAX_STUDENT 3
+#include <stdlib.h>
+#define MAX_STUDENTS 3
 
 // Define the Student structure
-struct Student {
+struct Students {
     char name[50];
     int roll_number;
     int age;
     char grade;
 };
 
-// Function to input data for a student
-void inputStudents(struct Student *s, int size, char *data[]) {
-    for (int i = 0; i < size; i++){
-        s->name
+void inputStudentsCmd(struct Students *s, int *size, char *data[]) {
+    for (int i = 0; i < *size; i++) {
+        strcpy(s -> name, data[i * 4 + 1]);
+        s -> roll_number = atoi(data[i * 4 + 2]);
+        s -> age = atoi(data[i * 4 + 3]);
+        s -> roll_number = data[i * 4 + 4][0];
         s += 1;
     }
-    s -= size;
+    s -= *size;
+}
+
+void inputStudents(struct Students *s, int *size) {
+    for (int i = 0; i < *size; i++) {
+        printf("Enter details for student %i\nEnter student name: ", (i+1));
+        scanf("%s", s->name);
+        printf("Enter roll number: ");
+        scanf("%d", &s->roll_number);
+        printf("Enter age: ");
+        scanf("%d", &s->age);
+        printf("Enter grade: ");
+        scanf(" %c", &s->grade);
+        s++;
+    }
+    s -= *size;
 }
 
 // Function to display student information
-void displayStudents(struct Student s, int size) {
-    printf("Student details: \n\n");
-    printf("Student name: %s\n", s.name);
-    printf("Roll number: %i\n", s.roll_number);
-    printf("Age: %i\n", s.age);
-    printf("Age: %c\n", s.grade);
-
+void displayStudents(struct Students *s, int *size) {
+    for (int i = 0; i < *size; i++) {
+        printf("\nStudent %i details:\nStudent Name: %s\nRoll Number: %d\nAge: %d\nGrade: %c\n", (i+1), s -> name, s -> roll_number, s -> age, s -> grade);
+        s++;
+    }
+    s -= *size;
 }
 
-int main(int argc, char *argv[]) {
-    struct Student student1;
+int main(int argc, char* argv[]) {
+    int size = (argc - 1) / 4;
+    struct Students students[size];
+    if (size < MAX_STUDENTS) size = MAX_STUDENTS;
+    if(argc > 1) {
+        inputStudentsCmd(students, &size, argv);
+    }
+    else {
+        size = MAX_STUDENTS;
+        inputStudents(students, &size);
+    }
 
-    printf("Enter details for students 1: \n");
-    inputStudents(&student1, MAX_STUDENT);
-    displayStudents(student1, MAX_STUDENT);
+    displayStudents(students, &size);
+
+    printf("\n");
     return 0;
 }
